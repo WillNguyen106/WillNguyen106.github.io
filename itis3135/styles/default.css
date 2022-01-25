@@ -2,5 +2,43 @@ body
 {
     font-family: Arial;
     color:darkseagreen;
-    background-color: gold;
+    background-color:goldenrod;
+
+    margin-left: 150px;
+    margin-right: 150px;
+}
+
+header, footer
+{
+    margin-top: 50px;
+    margin-bottom: 50px;
+    text-align:center;
+}
+
+main
+{
+    margin-left: 100px;
+    margin-right: 100px;
+}
+
+h1, h2, h3
+{
+    font-family:Verdana, Geneva, Tahoma, sans-serif;
+    text-align: center;
+    line-height: 0px;
+}
+
+figure
+{
+    text-align:center;
+}
+
+figcaption
+{
+    font-style: oblique;
+}
+
+nav
+{
+    text-align: center;
 }
