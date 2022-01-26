@@ -1,8 +1,8 @@
 body
 {
     font-family: Arial;
-    color:darkseagreen;
-    background-color:goldenrod;
+    color:darkcyan;
+    background-color:turquoise;
 
     margin-left: 150px;
     margin-right: 150px;
@@ -13,6 +13,7 @@ header, footer
     margin-top: 50px;
     margin-bottom: 50px;
     text-align:center;
+    color:darksalmon;
 }
 
 main
@@ -35,7 +36,7 @@ figure
 
 figcaption
 {
-    font-style: oblique;
+    font-style: italic;
 }
 
 nav
