@@ -24,7 +24,9 @@
 
         <main>
             <h2>Tables</h2>
-            <ol style="display: table; margin-left: 250px; margin-right: 100px;">
+            <h3>My Tabular Data</h3>
+
+            <ol style="display: table; margin-left: auto; margin-right: auto; font-size: 18px;">
                 <li>Nam Vang <a href = "namvang2509@gmail.com" > namvang2509@gmail.com</a> 28</li>
                 <li>Thuy Ca <a href = "thuyca2002@yahoo.com" > thuyca2002@yahoo.com</a> 30</li>
                 <li>Giang Huong <a href = "gianghuong2307@uncc.edu"> gianghuong2307@uncc.edu</a> 4</li>
@@ -34,11 +36,14 @@
                 <li>Jessica Vang <a href= "jessica675@email.com"> jessica675@email.com</a> 35  </li>
                 <li>Robert Fanta <a href= "robertfanta@gmail.com"> robertfanta@gmail.com</a>10</li>
             </ol>
+
+            <h3>Employee Data in Simple Table</h3>
+            
             <table class="center" >
                 <tr>
-                  <th> Name  </th>
-                  <th> Email </th>
-                  <th> Year of service</th>
+                    <th> Name  </th>
+                    <th> Email </th>
+                    <th> Year of service</th>
                 </tr>
                 <tr>
                     <td>Nam Vang</td>
@@ -81,13 +86,79 @@
                     <td>28</td>
                 </tr>
             </table>
+
+            <h3>Employee Data in Complex Table</h3>
+            <figure>
+                <table class="complex">
+                    <tr>
+                        <th id = "ca">Category</th>
+                        <th id = "na"> Name  </th>
+                        <th id = "em"> Email </th>
+                        <th id = "ya"> Year of service</th>
+                        <th id = "mo"> Monthly Salary </th>
+                    </tr>
+                    <tr>
+                        <td headers="ca" rowspan="2">Bosses</td>
+                        <td headers="na">Nam Vang</td>
+                        <td headers="em">namvang2509@gmail.com</td> 
+                        <td headers="ya">28</td>
+                        <td headers="mo">$30000</td>
+                    </tr>
+                    <tr>
+                        <td headers="na">Thuy Ca</td>
+                        <td headers="em">thuyca2002@yahoo.com</td>
+                        <td headers="ya">30</td>
+                        <td headers="mo">$20000</td>
+                    </tr>
+                    <tr>
+                        <td headers="ca" rowspan="2">Retailer</td>
+                        <td headers="na">Giang Huong</td>
+                        <td headers="em">gianghuong2307@uncc.edu</td>
+                        <td headers="ya">4</td>
+                        <td headers="mo">$10000</td>
+                    </tr>
+                    <tr>
+                        <td headers="na">Hung Vu</td>
+                        <td headers="em">hungvu9878@gmail.com</td>
+                        <td headers="ya">6</td>
+                        <td headers="mo">$9000</td>
+                    </tr>
+                    <tr>
+                        <td headers="ca" rowspan="2">Food Service</td>
+                        <td headers="na">Hoang Minh</td>
+                        <td headers="em">hoangminh1901@yahoo.com</td>
+                        <td headers="ya">10</td>
+                        <td headers="mo">$8000</td>
+                    </tr>
+                    <tr>
+                        <td headers="na">Linh Na</td>
+                        <td headers="em">minalinh1611@gmail.edu</td>
+                        <td headers="ya">15</td>
+                        <td headers="mo">$7000</td>
+                    </tr>
+                    <tr>
+                        <td headers="ca" rowspan="2">Supplier</td>
+                        <td headers="na">Jessica Vang</td>
+                        <td headers="em">jessica675@email.com</td>
+                        <td headers="ya">35</td>
+                        <td headers="mo">$6000</td>
+                    </tr>
+                    <tr>
+                        <td headers="na">Robert Fanta</td>
+                        <td headers="em">robertfanta@gmail.com</td>
+                        <td headers="ya">28</td>
+                        <td headers="mo">$5000</td>
+                    </tr>
+                    <tr>
+                        <th id = "to" colspan="3">Total Years and Salary of Service</th>
+                        <th headers="to">156</th>
+                        <th headers="to">$95000</th>
+                    </tr>
+            </table>
+            <figcaption style="font-size: 16px; line-height:normal;">Employee Information</figcaption>
+        </figure>
               
               
-
-
-
-
-
             <footer>
                 <br/>
                 <nav>
@@ -119,53 +190,6 @@
                 </p>
     
             </footer>
-
-
-
-
-
-
-
-
-
         </main>
-
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
     </body>
-
-
-
-
-
-
-
-
-    
-
-
-
-
-
-
-
 </html>

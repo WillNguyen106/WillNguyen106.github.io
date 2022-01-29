@@ -25,7 +25,7 @@ main
     margin-right: 100px;
 }
 
-h1,h2
+h1,h2,h3
 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
@@ -73,12 +73,32 @@ th
 td
 {
     border: 1px solid black;
+    text-align: center;
 }
 
 .center
 {
     margin-left: auto;
     margin-right: auto;
+    width: 700px;
 }
 
+.complex
+{
+    margin-left: auto;
+    margin-right: auto;
+    width: 800px;
+}
+
+table tr:nth-child(even)
+{
+    background-color:wheat;
+    color:rgb(99, 50, 13)
+}
+
+table tr:nth-child(odd)
+{
+    background-color:tan;
+    color:rgb(99, 50, 13)
+}
 
