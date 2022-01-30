@@ -152,6 +152,13 @@ input[type="Submit"], input[type="Reset"]
     border-radius: 5px;
 }
 
+a:link
+{
+    color:rgb(110, 110, 2) ;
+    background-color: transparent;
+    text-decoration: none;
+}
+
   
   
   
