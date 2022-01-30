@@ -102,3 +102,60 @@ table tr:nth-child(odd)
     color:rgb(99, 50, 13)
 }
 
+input[type=text]
+{
+    width: 40%;
+    padding: 3px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    font:normal;
+}
+
+input[type=email]
+{
+    width: 40%;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    font:normal;
+   
+}
+
+input[type=tel]
+{
+    width: 40%;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    
+}
+
+label
+{
+    padding: 6px 6px 6px 0px;
+    display: inline-block;
+}
+
+form 
+{
+    display: table;
+    background-color:#dedcf8;
+    color: #03071e;
+    margin-left: auto;
+    margin-right: auto;
+    padding: 30px;
+    border: 2px solid black;
+}
+
+input[type="Submit"], input[type="Reset"]
+{
+    border-radius: 5px;
+}
+
+  
+  
+  
+  
+  
+  
+
