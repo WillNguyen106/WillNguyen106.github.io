@@ -50,7 +50,6 @@ nav
 {
     text-align: center;
     font-size: 20px;
-    color:rgb(110, 110, 2);
     background-color: transparent;
     text-decoration: none;
 }
@@ -58,6 +57,11 @@ nav
 a
 {
     color:rgb(110, 110, 2);
+    text-decoration: none;
+}
+a:hover
+{
+    color:rgb(99, 50, 13);
 }
 
 table 
