@@ -55,7 +55,7 @@ nav
     text-decoration: none;
 }
 
-a:link
+a
 {
     color:rgb(110, 110, 2);
 }
