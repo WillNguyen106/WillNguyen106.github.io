@@ -15,25 +15,24 @@ function questions()
     setName(prompt("Please enter your name", "Will Nguyen"))
     setFeeling(prompt("How are you feeling?","Great!"))
 
-    document.getElementById('date').innerHTML = 'Today is' + getTodaysDate() + ', and the time is: ' + getCurrentTime();
-    document.getElementById('greet').innerHTML = "Nguyen Designs welcomes you, " + getName() + '!\n' + "We are glad you are doing " + setFeeling() + ".";
+    document.getElementById('date').innerHTML = 'Today is ' + getCurrentDate() + ', and the time is: ' + getCurrentTime();
+    document.getElementById('greet').innerHTML = 'Nguyen Designs welcomes you, ' + getName() + '!\n' + "We are glad you are doing " + getFeeling();
 }
 
 // Setter
-function setName(aname)
+function setName(fullName)
 {
-    this.name = aname;
+    this.name = fullName;
 }
 
-function setFeeling(feeling)
-{
-    this.feeling = feeling;
-}
-
-// Getter
 function getName()
 {
-    return aname;
+    return name;
+}
+
+function setFeeling(newFeeling)
+{
+    this.feeling = newFeeling;
 }
 
 function getFeeling()
@@ -57,4 +56,10 @@ function getCurrentTime()
     let ampm = date.getHours() >= 12 ? 'PM' : 'AM';
     let mins = date.getMinutes() < 10 ? '0' + date.getMinutes() : date.getMinutes();
     return date.getHours() % 12 + ':' + mins + ' ' + ampm;
+}
+
+function calculateTax()
+{
+    
+
 }
