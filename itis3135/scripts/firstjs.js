@@ -7,6 +7,7 @@ function scriptTest()
 // Declare variable
 var name;
 var feeling;
+var totalIncome;
 
 // Create a function question to ask user name and their feeling
 // also display current date and current time
@@ -58,8 +59,66 @@ function getCurrentTime()
     return date.getHours() % 12 + ':' + mins + ' ' + ampm;
 }
 
+function setTotalIncome(totalIncome)
+{
+    this.totalIncome = totalIncome;
+}
+
+function getTotalIncome()
+{
+    return totalIncome;
+}
+
 function calculateTax()
 {
-    
+    const tax = 0.0725;
+    let totalTax=0;
+    setTotalIncome(prompt("Enter your total income: ",""))
 
+    totalTax = getTotalIncome()*tax;
+
+    document.getElementById('tax').innerHTML='Your total tax is: $' + totalTax.toFixed(2);
+
+}
+
+
+
+function calculateAve()
+{
+    const num1 = parseInt(prompt('Enter the first number: '))
+    const num2 = parseInt(prompt('Enter the second number: '))
+
+    const average = (num1 + num2)/2;
+
+    document.getElementById('average').innerHTML='Your average of 2 numbers is: ' + average.toFixed(2);
+
+
+}
+
+function calculateHours()
+{
+    const days = parseFloat(prompt('Enter your number of days: '))
+
+    const hours = days*24;
+
+    document.getElementById('hours').innerHTML='The total hours of your days is: ' + hours.toFixed(2) +' hrs';
+}
+
+function calculateMinutes()
+{
+    const hours = parseFloat(prompt('Enter your number of hours: '))
+
+    const minutes = hours*60;
+
+    document.getElementById('minutes').innerHTML='The total minutes of your hours is: ' + minutes.toFixed(2) + ' min';
+
+}
+
+function calculateSeconds()
+{
+    const days = parseFloat(prompt('Enter your number of days: '))
+
+    const seconds = days*86400;
+
+    document.getElementById('second').innerHTML='The total second of your days is: ' + seconds.toFixed(2) + ' sec';
 }
