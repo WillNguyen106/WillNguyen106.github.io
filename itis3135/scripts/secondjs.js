@@ -14,7 +14,7 @@ function userInput()
 // Create a validation function to make sure the entry is a valid number
 function validateEntry()
 {
-    while(numberOfSide > 10 || isNaN(numberOfSide))
+    while(numberOfSide > 10 || numberOfSide < 0 || isNaN(numberOfSide))
     {
         alert("Your number is not valid. Please enter your number again(1-10)");
         numberOfSide = parseInt(prompt("The Walnut Numbat would like your number: "))
