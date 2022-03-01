@@ -77,6 +77,7 @@ window.onload = function()
                 {
                     calculator.dataset.firstValue = ''
                     calculator.dataset.operator = ''
+                    calculator.dataset.modValue = ''
                     calculator.dataset.previousKeyType = ''
                 }
                 else
