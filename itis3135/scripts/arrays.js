@@ -4,8 +4,8 @@
 Create 2 arrays that take number of people and their salaries
 Both of arrays should be constant
 */
-var person =[];
-var salaries =[];
+var person =["William","Brooke","James"];
+var salaries =[50000,100000];
 
 
 /*
@@ -16,7 +16,8 @@ function addSalary()
 {
     for(var i = 0; i < 5; i++)
     {
-        person.push(promt("Enter your name: ")
+
+    
     }
 
 
