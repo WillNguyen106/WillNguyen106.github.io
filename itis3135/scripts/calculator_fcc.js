@@ -107,13 +107,13 @@ window.onload = function()
                     if(previousKeyType === 'calculate')
                     {
                         firstValue = displayedNum
+                        secondValue = calculator.dataset.modValue
                     }
                     
                     display.textContent = calculate(firstValue, operator, secondValue)
                 }
 
                 //calculator.dataset.previousKeyType = 'calculate'
-                modValue = secondValue
                 calculator.dataset.previousKeyType = 'calculate'
                
             }
