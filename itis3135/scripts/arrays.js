@@ -1,11 +1,20 @@
-
+var $ = function()
+{
+    return document.getElementById(id);
+};
+window.onload = function()
+{
+    $("add_Salary").innerHTML = addSalary;
+    $("display_Salary").innerHTML = displaySalary;
+    $("display_Result").innerHTML = displayResult;
+}
 
 /*
 Create 2 arrays that take number of people and their salaries
 Both of arrays should be constant
 */
-var person =["William","Brooke","James"];
-var salaries =[50000,100000];
+const person =[];
+const salaries =[];
 
 
 /*
@@ -14,17 +23,10 @@ To test, click the Display Salary button and see if the new values have been add
 */
 function addSalary()
 {
-    for(var i = 0; i < 5; i++)
-    {
-
-    
-    }
-
-
     // add data validation to validate the entries must not be empty
     // and value has to be numeric
-    // use aleart() 
-
+    // use alert()
+    alert("testing");
 }
 
 /*

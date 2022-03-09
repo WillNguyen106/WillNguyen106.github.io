@@ -11,15 +11,27 @@
     <body>
         <div data-include = "components/header.html"></div>
         <main>
-            <button onclick = "addSalary()"></button>
-        
-        
-        
-        
-        
-        
-        
-        
+            <form>
+                <label for="name">Employee name:</label>
+                <select name = "name" id = "name">
+                    <option value = "William">William</option>
+                    <option value = "Brooke">Brooke</option>
+                </select> <br>
+                <!--User want to add a new name-->
+                <label for="newName">New name:</label>
+                <input id ="newName" type = "text" aria-required="true"><br>
+                <!--User want to add a new salary-->
+                <label for="salary">Salary:</label>
+                <input id="newSalary" type = "number" required=""> <br>
+                <!--Create 3 buttons-->
+                <input id="add_Salary" type = "button" value="Add Salary">
+                <input id="display_Result" type = "button" value="Show Result">
+                <input id="display_Salary" type = "button" value="Display Salary"><br>
+            </form>
+            <!--Display result as a salary table-->
+            <div id="result"></div>
+            <table id="salary_table"></table>
+
         </main>
         <div data-inclue = "components/footer.html"></div>
         <script src = "scripts/htmlInclude.js"></script>
