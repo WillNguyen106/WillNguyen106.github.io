@@ -1,4 +1,4 @@
-var $ = function()
+var $ = function(id)
 {
     return document.getElementById(id);
 };
@@ -61,7 +61,6 @@ function displaySalary()
         display.innerHTML += "<tr><td>"+ person[i] + "</td><td>" + salary[i] + "</td></tr>";
     }
     
-
 }
 
 
