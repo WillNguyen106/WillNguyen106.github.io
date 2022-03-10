@@ -29,21 +29,24 @@ function addSalary()
     // and value has to be numeric
     // use alert()
     var name = $("name").value;
-    var salary = $("salary").value;
+    var salaryInput = $("salary").value;
+    salaryInput = parseInt(salaryInput);
     // Validate user input
     if(name == "")
     {
         alert("Please enter your name")
+        return;
     }
-    if(salary < 0 || isNaN(salary))
+    if(salaryInput < 0 || isNaN(salaryInput))
     {
         alert("Please enter your salary")
+        return;
     }
     // Adding the input into array
     person.push(name);
-    salary.push(salary);
+    salary.push(salaryInput);
     // 
-    $("add_Salary") = "";
+    $("add_Salary").innerHTML = "";
     $("name").focus();
 }
 
@@ -72,8 +75,9 @@ function displaySalary()
 */
 function displayResult()
 {
-    var sum;
+    var sum = 0;
     var average;
+    var highest = 0;
     
 
     // Calculate sum of total salary
@@ -84,20 +88,16 @@ function displayResult()
 
     // Calculate average of total salary
     average = (sum/salary.length).toFixed(2);
-
     // Get the highest salary 
-    for(let j = 1;j<salary.length;i++)
+    for(let j = 1;j<salary.length;j++)
     {
-        let highest = 0;
         if(salary[highest]< salary[j])
         {
             highest = j;
         }
-
-
     }
-
-    $("result").innerHTML = "<h2>Results</h2>" + "<p>Average salary is: " + average + " thousand" +"</p>" + "<p>The highest salary is: " + highest +"</p";
+    
+    $("result").innerHTML = "<h2>Results</h2>" + "<p>Average salary is: " + average + " thousand" +"</p>" + "<p>The highest salary is: " + salary[highest] +"</p";
 
 }
 
