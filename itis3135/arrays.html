@@ -11,24 +11,26 @@
     <body>
         <div data-include = "components/header.html"></div>
         <main>
+            <form>
                 <label for="name">Employee name:</label>
                 <select name = "name" id = "name">
                     <option value = "William">William</option>
                     <option value = "Brooke">Brooke</option>
                 </select> <br>
                 <!--User want to add a new name-->
-                <label for="newName">New name:</label>
-                <input id ="newName" type = "text" aria-required="true"><br>
+                <label for="name">Employee name:</label>
+                <input id ="name" type = "text" aria-required="true"><br>
                 <!--User want to add a new salary-->
                 <label for="salary">Salary:</label>
-                <input id="newSalary" type = "number" required=""> <br>
+                <input id="salary" type = "number" required=""> <br>
                 <!--Create 3 buttons-->
                 <input id="add_Salary" type = "button" value="Add Salary">
                 <input id="display_Result" type = "button" value="Show Result">
                 <input id="display_Salary" type = "button" value="Display Salary"><br>
+            </form>
             <!--Display result as a salary table-->
             <div id="result"></div>
-            <table id="salary_table"></table>
+            <table id="result_table"></table>
 
         </main>
         <div data-inclue = "components/footer.html"></div>
