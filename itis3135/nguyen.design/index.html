@@ -12,19 +12,28 @@
 
             }
 
+            h2
+            {
+                margin-left: 70px;
+                margin-right: auto;
+                font-family: Georgia, 'Times New Roman', Times, serif;
+                font-size: 25px;
+            }
+
             body
             {
                 font-family: Arial;
-                color:rgb(99, 50, 13);
-                background-color:#FFAD99;
-
+                color:whitesmoke;
+                background-image: url("images/background-black-colors-952670.jpg");
+                margin-left: 50px;
+                margin-right: 50px;
             }
 
             header
             {
                 text-align: center;
                 font-weight: bold;
-                color:rgb(99, 50, 13);
+                color:whitesmoke;
                 font-size: 25px;
             }
 
@@ -32,7 +41,7 @@
             {
                 text-align: center;
                 font-weight:bold;
-                color:rgb(99, 50, 13);
+                color:whitesmoke;
                 font-size: 10px;
             }
 
@@ -41,7 +50,7 @@
                 font-size: 20px;
                 margin-left: 100px;
                 margin-right: 100px;
-                font-family:'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+                font-family:Georgia, 'Times New Roman', Times, serif;
             }
             
             a
@@ -50,6 +59,19 @@
                 background-color: transparent;
                 text-decoration: none;
             }
+
+            .picture
+            {
+                height: 100px;
+                width:100px;
+                border-radius: 50%;
+                text-decoration: transparent;
+            }
+
+            .center
+            {
+                text-align: center;
+            }
         </style>
     </head>
 
@@ -57,39 +79,39 @@
     <body>
         <header>
             <h1>Nguyen Designs</h1>
+            <img class="picture" src="images/wnlogo.jpg" alt="Will Nguyen company logo">
         </header>
         
         <main>
             
-            <h2>
-                <nav>
-                    <a href="./" >Home</a>
-                </nav>
-             </h2>
-            <p>
-                Welcome to the Nguyen Design! We are here to provide you the best service.
-                <ul>
-                    <li>Logo Design</li>
-                    <li>Web Design</li>
-                    <li>Graphic Design</li>
-                    <li>Commercial Products</li>
-                </ul>
-
+            <h2>Nguyen Design LLC Services</h2>
+            <div>
+                <p>Welcome to the Nguyen Design! We are here to provide you the best service</p>
+                    <ul>
+                        <li>Logo Design</li>
+                        <li>Web Design</li>
+                        <li>Graphic Design</li>
+                        <li>Commercial Products</li>
+                    </ul>
+            </div>
+            <hr>
+            <div class="center">
                 <p>Contact us</p>
-                <ul>
-                    <li>Email: quangnguyen106@gmail.com</li>
-                    <li>Phone: 999-888-7777</li>
-                    <li>Address: 4321 Briar Lake, Charlotte, NC 28276 </li>
-                </ul>
-            </p>
+                <p>Email: quangnguyen106@gmail.com</p>
+                <p>Phone: 999-888-7777</p>
+                <p>Address: 4321 Briar Lake, Charlotte, NC 28276</p>
+            </div>
+            <hr>
 
         </main>
-
-        
-        
-        
         <footer><br>
-           <p> &copy;2022 </p>
-        </footer>
+           <p> Page created by Nguyen Design LLC &copy;2022 </p><br>
+           <a id="validation_link_html" href=""><img src="../images/button_validation_html5.png" alt="HTML Validation Link" style="width: 88px; height: 31px;"/></a>
+           <a id="validation_link_css" href=""><img src="../images/button_validation_css.png" alt="CSS Validation Link" style="width: 88px; height: 31px;"></a>
+           <script>
+             document.getElementById('validation_link_css').setAttribute('href', 'https://jigsaw.w3.org/css-validator/check?uri=' + location.href);
+             document.getElementById('validation_link_html').setAttribute('href', 'https://validator.w3.org/check?uri=' + location.href);
+           </script>
+       </footer>
     </body>
 </html>
