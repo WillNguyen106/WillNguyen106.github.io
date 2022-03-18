@@ -13,39 +13,38 @@ body
     font-family: Arial;
     color:#6E646C;
     background-color:#FBEEEB;
-    margin-left: 150px;
-    margin-right: 150px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-header, footer
+header
 {
     margin-top: 50px;
-    margin-bottom: 50px;
     text-align:center;
-    color:#6E646C;    
-    line-height: normal;
+    color:#6E646C; 
+}
 
+footer
+{
+    text-align:center;
+    color:#6E646C; 
 }
 
 main
 {
-    margin-left: 100px;
-    margin-right: 100px;
+    margin-left: 50px;
+    margin-right: 50px;
 }
 
-h1,h2
+h2, h3
 {
     font-family:Verdana, Geneva, Tahoma, sans-serif;
     text-align: center;
     font-size: 35px;
+    
 }
 
-h3
-{
-    font-family:Verdana, Geneva, Tahoma, sans-serif;
-    text-align: center;
-    font-size: 20px;
-}
+h3 {font-size: 20px;}
 
 figure
 {
@@ -240,7 +239,7 @@ input[type="Submit"], input[type="Reset"]
 
 p
 {
-	font-size: xx-large;
+	font-size: 20px;
 }
 
 .calculator__display 
