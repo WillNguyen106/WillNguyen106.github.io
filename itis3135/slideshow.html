@@ -10,15 +10,47 @@
             Will Nguyen | ITIS 3135 | Walnut Brown Numbat | SlideShow
         </title>
     </head>
+    <style>
+      
+      
+        li 
+        {
+            display: inline;
+            width: 500px;
+            height: 500px;
+            margin: 40px auto;
+        }
+
+        .thumbnails
+        {
+            width: 100px;
+            height: 80px;
+        }
+
+
+
+
+    </style>
     
     <body>
         <div data-include = "components/header.html"></div>
        <main>
-           
-            
-    
-    
-    
+            <h1>Car SlideShow</h1>
+                <ul id="image_list">
+                    <li><a href="images/chevycamaro.jpg" title="Chevy Camaro">
+                        <img class="thumbnails" src="images/chevycamaro.jpg" alt=""></a></li>
+                    
+                    <li><a href="images/posche911.jpg" title="Posche911">
+                        <img class="thumbnails" src="images/posche911.jpg" alt=""></a></li>
+                    
+                    <li><a href="images/lamborghini.jpg" title="Lamborghini">
+                        <img class="thumbnails" src="images/lamborghini.jpg" alt=""></a></li>
+                    
+                    <li><a href="images/Mercedes-Benz.jpg" title="Mercedes-Benz">
+                        <img class="thumbnails" src="images/Mercedes-Benz.jpg" alt=""></a></li>
+                </ul>
+            <h2 id="caption">Chevy Camaro</h2>
+            <p><img id="main_image" src="images/chevycamaro.jpg" alt=""></p>
         </main>
 
         <div data-include = "components/footer.html"></div>
