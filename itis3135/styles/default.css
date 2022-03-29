@@ -271,6 +271,20 @@ p
 {
     text-align: center;
 }
+
+li 
+{
+    display: inline;
+    width: 500px;
+    height: 500px;
+    margin: 40px auto;
+}
+
+.thumbnails
+{
+    width: 100px;
+    height: 80px;
+}
   
   
   
