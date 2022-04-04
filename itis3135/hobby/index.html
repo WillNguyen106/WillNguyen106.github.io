@@ -2,20 +2,16 @@
 <html lang="en-US">
     <head>
         <meta charset="utf-8">
-        <script src="scripts/hobbies.js"></script>
+        <script src="scripts/hobbies.js" defer></script>
+        <script src="scripts/hobbyslideshow.js" defer></script>
     </head>
     <style>
-    img
-    {
-        width: 350px;
-        height: 350px;
-        vertical-align: middle;
-    }
-
+    
+    /* Element decoration*/
     body
     {
-        margin-left: 50px;
-        margin-right: 50px;
+        margin:0;
+        padding: 0;
         background-color:antiquewhite;
     }
 
@@ -31,146 +27,291 @@
         font-size: 16px;
         font-family:Arial, Helvetica, sans-serif;
     }
+    
 
     figure
     {
         text-align: center;
     }
 
-    
-    
-    .tablink
+    figure img
     {
-       background-color: burlywood;
-       color: black;
-       float:left;
-       border:none; 
-       outline: none;
-       cursor: pointer;
-       padding: 14px 16px;
-       font-size: 17px;
-       width: 16%;
-       
+        width: 320px;
+        height: 320px;
     }
 
-    .tablink:hover{background-color: antiquewhite;}
+    strong
+    {
+        text-align: justify;
+        display: inline-block;
+    }
+
+    /* Tab decoration and display element*/
+    [data-tab-content]
+    {
+        display: none;
+    }
+
+    .active[data-tab-content]
+    {
+        display: block;
+    }
+
+    .tabs
+    {
+        display: flex;
+        justify-content: space-around;
+        list-style-type: none;
+        margin:0;
+        padding:0;
+        border-bottom: 1px solid black;
+    }
+
+    .tab
+    {
+        cursor: pointer;
+        padding: 10px;
+    }
+
+    .tab.active
+    {
+        background-color: burlywood;
+    }
+
+    .tab:hover
+    {
+        background-color: burlywood;
+    }
+
+    .tab-content
+    {
+        margin-left: 60px;
+        margin-right: 60px;
+    }
+    
+    /* Slideshow Decoration*/ 
+    .box
+    {
+        max-width: 90%;
+        /* The position of the element is set relative to its original position: */
+        position: relative;
+        /* Center horizontally*/
+        margin-left: 400px;
+        height: 300px;
+    }
+    /* The picture is scaled in relation to the parent element: */
+    .box .item img
+    {
+        /* The element is resized to fill the block and maintain proportions: */
+        object-fit:fill;
+        width: 600px;
+        height: 500px;
+    }
+    /* Back and forward buttons: */
+    .box .previous, .box .next
+    {
+        /* Adds an icon to the cursor when it is over the button: */
+        cursor: pointer;
+        /* The position of the element is set relative to the borders of the browser: */
+        position:absolute;
+        top: 60%;
+        margin-top: -22px;
+        padding: 10px;
+        /* Styling the buttons themselves: */
+        color:white;
+        font-weight: bold;
+        font-size: 20px;
+        /* Background fading on hover: */
+        transition: 0.6s ease;
+        /* Rounding the borders: */
+        border-radius: 0px 3px 3px 0px;
+    }
+
+    .box .next
+    {
+        right: 385px;
+        border-radius: 3px 0 0 3px;
+    }
+    /* When you hover over the buttons, add the background of the buttons: */
+    .box .previous:hover, .box .next:hover
+    {
+        background-color:rgba(0, 0, 0, 0.2);
+    }
+
+    /* Slide animation: */
+    .box .item
+    {
+        animation-name: fade;
+        animation-duration: 1.5s;
+    }
+
+    @keyframes fade
+    {
+        /* Set and change the transparency: */
+        from
+        {
+            opacity: 0.4;
+        }
+        to
+        {
+            opacity: 1;
+        } 
+    }
+
+
 
     </style>
     <body>
         <header>
-            <button class="tablink" onclick="aboutme()">About me</button>
-            <button class="tablink" onclick="history()">Vietnam History</button>
-            <button class="tablink" onclick="food()">Vietnam Food</button>
-            <button class="tablink" onclick="visitWhen()">Vietnam Season</button>
-            <button class="tablink" onclick="scenery()">Vietnam Scenery</button>
-            <button class="tablink" onclick="vehicles()">Vietnam Vehicles</button>
+            <ul class="tabs">
+                <li data-tab-target="#who" class="active tab">About me</li>
+                <li data-tab-target="#history" class="tab">Vietnam History</li>
+                <li data-tab-target="#food" class="tab">Vietnam Food</li>
+                <li data-tab-target="#when" class="tab">Vietnam Season</li>
+                <li data-tab-target="#what" class="tab">Vietnam Scenery</li>
+                <li data-tab-target="#how" class="tab">Vietnam Vehicles</li>
+            </ul>
         </header>
         <main>
-            <section id="who">
-                <h2>Who am I?</h2>
-                <figure>
-                    <a href="images/Will3.jpg">
-                    <img src="images/Will3.jpg" alt="Will Nguyen's picture"></a>
-                    <figcaption>Photo by Bao Than</figcaption>
-                </figure>
-                <p>
-                    Hello, my name is William Nguyen. I am in the second semester of my junior year studying Computer Science at University of Charlotte
-                    I would like to tell you a little bit about my background, my hobby and my goal. 
-                    
-                    I was born in a small city called Quy Nhon. Quy Nhon is located about 200 kilometers middle of Binh Dinh province in Vietnam. I spent 
-                    my first 10 years of life in Quy Nhon. Then my parents decided to move into a bigger city called Sai Gon. When I was 20, I have moved 
-                    to America for studying abroad. I love America as same as my country. My career will start in this country becasue there are so many
-                    oppotunities for me to be successful in the future. I especially love computer and computer is my best friend that I need to pursue my
-                    dream job which is software engineering. Nevertheless, to fully understand my best friend, it is not easy and will take a lot of time.<br>
-
-                    <strong>Hobbies</strong><br>
-
-                    I have so many interested hobbies such as hiking, playing game, reading book, bowling, shooting. But my best hobby is traveling. I love adventures
-                    so I went to travel so many place in Vietnam that is one of the beautiful countries in the world. A land of staggering natural beauty and cultural 
-                    complexities, of dynamic megacities and hill-tribe villages, Vietnam is both exotic and compelling. Please follow my blog if you are interested in
-                    Vietnam and would love to know more about this country.
-                </p>
-            </section>
-            <section id="history">
-                <h2>How is the Vietnam History?</h2>
-                <figure>
-                    <a href="images/VietnamMap.jpg">
-                        <img src="images/VietnamMap.jpg" alt="Vietnam Map">
-                    </a>
-                    <figcaption>Vietnam in the World Map</figcaption>
-                </figure>
-
-                <p>
-                    About 2,000 years ago people in North Vietnam began growing rice in the Red River Valley. To irrigate their crops they built dikes and dug canals. 
-                    They were forced to work together and so an organized kingdom emerged called Van Lang.
-
-                    However, in the 2nd century BC, the Chinese conquered the area. The Chinese ruled northern Vietnam for more than 1,000 years and Chinese civilization 
-                    had a great impact on the Vietnamese.
-                        
-                    However, in South Vietnam, there was Indian influence. From the 1st century to the 6th century AD the southernmost part of Vietnam was part of a state 
-                    called Funan. In the middle of Vietnam, an Indian-influenced state called Champa arose in the 2nd century AD.
-                        
-                    In North Vietnam, the people resented Chinese rule and in 40 AD the Trung sisters led a rebellion. They formed an independent state. However, in 43 AD t
-                    he Chinese crushed the rebellion and the sisters killed themselves. The Chinese continued to rule North Vietnam until the 10th century. Finally, in 938 a leader named Ngo Quyen defeated the Chinese at the battle of Bach Dang River and North Vietnam became an independent state.
-
-                </p>
-            </section>
-            <section id="food">
-                <h2>Why VietNam Food is so good?</h2>
-                <p>
-                    The traditional Vietnamese diet is healthy. Meals emphasize rice, vegetables and fish, and cooking methods often involve steaming or stir-frying.
-
-                    Rice is the staple of the diet, consumed in some form in almost every meal. For Vietnamese adults, all three meals of the day may consist of steamed 
-                    rice with side dishes of vegetables or fish or meat. Variations on steamed rice include congee – rice gruel; rice vermicelli topped with ground pork, 
-                    bean sprouts, mint or basil; and pho – rice noodle soup made with beef or chicken broth and slices of meat, garnished with bean sprouts and basil.
+            <div class="tab-content">
+                <!--First section about hobby-->
+                <div id="who" data-tab-content class="active">
+                    <h2>Who am I?</h2>
                     <figure>
-                        <a href="images/Pho.jpg">
-                            <img src="images/Pho.jpg" alt="Traditional Vietnam Pho">
-                            <figcaption>Photo by <a href="#">areta ekarafi</a></figcaption>
-                        </a>
+                        <a href="images/Will3.jpg">
+                        <img src="images/Will3.jpg" alt="Will Nguyen's picture"></a>
+                        <figcaption>Photo by Bao Than</figcaption>
                     </figure>
-                    Pho is sometimes eaten for breakfast. Also popular are salty cakes made of rice flour with minced pork and dried shrimp. The more Americanized Vietnamese
-                    may eat breakfasts of oatmeal or French bread with jam and tea. Lunch might consist of banh mi, a sandwich of carrots, cilantro, onions and daikon with pork 
-                    or chicken on a French roll; or rice vermicelli; or pork and vegetables wrapped in thin rice-paper wrappers. Dinner is almost always rice, plus a few steamed 
-                    or stir-fried dishes, typically including vegetables and either fish or pork.
-                </p>
-            </section>
-            <section id="when">
-                <h2>When should I go visit Vietnam?</h2>
-                <p>
-                    <strong>When to visit North Vietnam (Sapa, Hanoi, Halong Bay)</strong><br>
-                    The north of Vietnam experiences cold dry winters from December to February, where overnight temperatures can dip to 39 degrees. The summer months (May to August) 
-                    are typically very hot and humid. The best time to visit northern Vietnam is during spring (March to April) and autumn (September to November),when days are generally 
-                    warm and sunny.<br>
-                    <strong>When to visit Central Vietnam (Hue, Hoi An)</strong><br>
-                    The coast of central Vietnam is often battered with typhoon during wet season. It is difficult to predict when these heavy rains and hurricane-like winds can hit coastal
-                    cities like Hoi An, but generally typhoon seasons runs from August to November. So, the best time to travel to central Vietnam is between February and August.<br>
-                    <strong>When to visit South Vietnam (Ho Chi Minh City, Mekong Delta)</strong><br>
-                    South Vietnam experiences warm, pleasant temperature year-round, making travel good at any time. The dry season generally runs from December to May and a rainy season runs froms
-                    June through November. 
-                </p>
-            </section>
-            <section id="what">
-                <h2>Where should I travel to Vietnam?</h2>
-                <p>
-                    Vietnam has so many places that you can travel and enjoy your trip. You will not regret if you spend your vacation time in Vietnam. Moreover, Vietnam has so many mountain and lakes that
-                    will relax your mind and you also easy to find your peaceful there. Below is the slideshow of Vietnam.
-                </p>
-                    
-          
-            </section>
-            <section id="how">
-                <h2>How do I travel when I am in Vietnam?</h2>
-                <p>
-                    Motorbiking is a popular way for travelers to get around, but it is not simple. In my opinion, I love driving motorbike becasue I can feel the wind and I can stop whenever I want to.
-                    motorbikes up to 50 cc can be ridden without license in Vietnam, but this size is not suitable for long trip. You will need a vietnamese license to be able to use motorbike.<br>
-                    <strong>Renting or buying motorbike in Vietnam</strong><br>
-                    You should rent from reputable companies that provide reliable vehicles (Honda, Yamaha etc), rather than Chinese knock-offs. The cheap bikes are around $200 and more. Moreover, 110cc to 125cc
-                    will be completely sufficient for touring the country. Speed limits are low within Vietnam - 25mi/h (40km/h) for cities, 37mi/h (60km/h) for highways - so having a very powerful motorbike can often
-                    be a detriment in congested areas.<br>
+                    <p>
+                        Hello, my name is William Nguyen. I am in the second semester of my junior year studying Computer Science at University of Charlotte
+                        I would like to tell you a little bit about my background, my hobby and my goal. 
+                        
+                        I was born in a small city called Quy Nhon. Quy Nhon is located about 200 kilometers middle of Binh Dinh province in Vietnam. I spent 
+                        my first 10 years of life in Quy Nhon. Then my parents decided to move into a bigger city called Sai Gon. When I was 20, I have moved 
+                        to America for studying abroad. I love America as same as my country. My career will start in this country becasue there are so many
+                        oppotunities for me to be successful in the future. I especially love computer and computer is my best friend that I need to pursue my
+                        dream job which is software engineering. Nevertheless, to fully understand my best friend, it is not easy and will take a lot of time.<br>
 
-                </p>
-            </section>
+                        I have so many interested hobbies such as hiking, playing game, reading book, bowling, shooting. But my best hobby is traveling. I love adventures
+                        so I went to travel so many place in Vietnam that is one of the beautiful countries in the world. A land of staggering natural beauty and cultural 
+                        complexities, of dynamic megacities and hill-tribe villages, Vietnam is both exotic and compelling. Please follow my blog if you are interested in
+                        Vietnam and would love to know more about this country.
+                    </p>
+                </div>
+            
+                <!--Section 2 of Hobby-->
+                <div id="history" data-tab-content>
+                    <h2>How is the Vietnam History?</h2>
+                    <figure>
+                        <a href="images/VietnamMap.jpg">
+                            <img src="images/VietnamMap.jpg" alt="Vietnam Map">
+                        </a>
+                        <figcaption>Vietnam in the World Map</figcaption>
+                    </figure>
+
+                    <p>
+                        About 2,000 years ago people in North Vietnam began growing rice in the Red River Valley. To irrigate their crops they built dikes and dug canals. 
+                        They were forced to work together and so an organized kingdom emerged called Van Lang.
+
+                        However, in the 2nd century BC, the Chinese conquered the area. The Chinese ruled northern Vietnam for more than 1,000 years and Chinese civilization 
+                        had a great impact on the Vietnamese.
+                            
+                        However, in South Vietnam, there was Indian influence. From the 1st century to the 6th century AD the southernmost part of Vietnam was part of a state 
+                        called Funan. In the middle of Vietnam, an Indian-influenced state called Champa arose in the 2nd century AD.
+                            
+                        In North Vietnam, the people resented Chinese rule and in 40 AD the Trung sisters led a rebellion. They formed an independent state. However, in 43 AD t
+                        he Chinese crushed the rebellion and the sisters killed themselves. The Chinese continued to rule North Vietnam until the 10th century. Finally, in 938 a leader named Ngo Quyen defeated the Chinese at the battle of Bach Dang River and North Vietnam became an independent state.
+
+                    </p>
+                </div>
+            
+                <!--Section 3 of Hobby-->
+                <div id="food" data-tab-content>
+                    <h2>Why VietNam Food is so good?</h2>
+                    <p>
+                        The traditional Vietnamese diet is healthy. Meals emphasize rice, vegetables and fish, and cooking methods often involve steaming or stir-frying.
+
+                        Rice is the staple of the diet, consumed in some form in almost every meal. For Vietnamese adults, all three meals of the day may consist of steamed 
+                        rice with side dishes of vegetables or fish or meat. Variations on steamed rice include congee – rice gruel; rice vermicelli topped with ground pork, 
+                        bean sprouts, mint or basil; and pho – rice noodle soup made with beef or chicken broth and slices of meat, garnished with bean sprouts and basil.
+                        <figure>
+                            <a href="images/Pho.jpg">
+                                <img src="images/Pho.jpg" alt="Traditional Vietnam Pho">
+                                <figcaption>Photo by <a href="#">areta ekarafi</a></figcaption>
+                            </a>
+                        </figure>
+                        Pho is sometimes eaten for breakfast. Also popular are salty cakes made of rice flour with minced pork and dried shrimp. The more Americanized Vietnamese
+                        may eat breakfasts of oatmeal or French bread with jam and tea. Lunch might consist of banh mi, a sandwich of carrots, cilantro, onions and daikon with pork 
+                        or chicken on a French roll; or rice vermicelli; or pork and vegetables wrapped in thin rice-paper wrappers. Dinner is almost always rice, plus a few steamed 
+                        or stir-fried dishes, typically including vegetables and either fish or pork.
+                    </p>
+                </div>
+            
+                <!--Section 4 of Hobby-->
+                <div id="when" data-tab-content>
+                    <h2>When should I go visit Vietnam?</h2>
+                    <p>
+                        <strong>When to visit North Vietnam (Sapa, Hanoi, Halong Bay)</strong><br>
+                        The north of Vietnam experiences cold dry winters from December to February, where overnight temperatures can dip to 39 degrees. The summer months (May to August) 
+                        are typically very hot and humid. The best time to visit northern Vietnam is during spring (March to April) and autumn (September to November),when days are generally 
+                        warm and sunny.<br>
+                        <strong>When to visit Central Vietnam (Hue, Hoi An)</strong><br>
+                        The coast of central Vietnam is often battered with typhoon during wet season. It is difficult to predict when these heavy rains and hurricane-like winds can hit coastal
+                        cities like Hoi An, but generally typhoon seasons runs from August to November. So, the best time to travel to central Vietnam is between February and August.<br>
+                        <strong>When to visit South Vietnam (Ho Chi Minh City, Mekong Delta)</strong><br>
+                        South Vietnam experiences warm, pleasant temperature year-round, making travel good at any time. The dry season generally runs from December to May and a rainy season runs froms
+                        June through November. 
+                    </p>
+                </div>
+            
+                <!--Section 5 of Hobby-->
+                <div id="what" data-tab-content>
+                    <h2>Where should I travel to Vietnam?</h2>
+                    <p>
+                        Vietnam has so many places that you can travel and enjoy your trip. You will not regret if you spend your vacation time in Vietnam. Moreover, Vietnam has so many mountain and lakes that
+                        will relax your mind and you also easy to find your peaceful there. Below is the slideshow of Vietnam.
+                        <div class="box">
+                            <!--First image-->
+                            <div class="item">
+                                <img src="images/HalongBay.jpg" alt="Ha Long Bay">
+                            </div>
+                            <!--Second image-->
+                            <div class="item">
+                                <img src="images/hanoi.jpg" alt="Ha Noi">
+                            </div>
+                            <!--Third image-->
+                            <div class="item">
+                                <img src="images/hoian.jpeg" alt="Hoi An">
+                            </div>
+                            <!--Four image-->
+                            <div class="item">
+                                <img src="images/phuquoc.jpg" alt="Phu Quoc">
+                            </div>
+                            <!--Fifth image-->
+                            <div class="item">
+                                <img src="images/Sapa.jpg" alt="Sa Pa">
+                            </div>
+                            <!--Previous and Next Button-->
+                            <a class="previous" onclick="previousSlide()">&#10094;</a>
+                            <a class="next" onclick="nextSlide()">&#10095;</a>
+                        </div>
+                    </p>
+                </div>
+            
+                <!--Section 6 of Hobby-->
+                <div id="how" data-tab-content>
+                    <h2>How do I travel when I am in Vietnam?</h2>
+                    <p>
+                        Motorbiking is a popular way for travelers to get around, but it is not simple. In my opinion, I love driving motorbike becasue I can feel the wind and I can stop whenever I want to.
+                        motorbikes up to 50 cc can be ridden without license in Vietnam, but this size is not suitable for long trip. You will need a vietnamese license to be able to use motorbike.<br>
+                        <strong>Renting or buying motorbike in Vietnam</strong><br>
+                        You should rent from reputable companies that provide reliable vehicles (Honda, Yamaha etc), rather than Chinese knock-offs. The cheap bikes are around $200 and more. Moreover, 110cc to 125cc
+                        will be completely sufficient for touring the country. Speed limits are low within Vietnam - 25mi/h (40km/h) for cities, 37mi/h (60km/h) for highways - so having a very powerful motorbike can often
+                        be a detriment in congested areas.<br>
+
+                    </p>
+                </div>
+            </div>
         </main>
         <footer>
 

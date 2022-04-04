@@ -1,58 +1,29 @@
 
-function allhide()
-{
-    document.getElementById("who").style.display = "none";
-    document.getElementById("history").style.display = "none";
-    document.getElementById("food").style.display = "none";
-    document.getElementById("when").style.display = "none";
-    document.getElementById("what").style.display = "none";
-    document.getElementById("how").style.display = "none";
+// Create variable tabs to select all data in class tabs
+const tabs = document.querySelectorAll('[data-tab-target]')
 
-}
+// Create variable tabContents to select all data in class tab-content
+const tabContents =  document.querySelectorAll('[data-tab-content]')
 
-function aboutme()
-{
-    allhide();
-    var a = document.getElementById("who");
-    a.style.display = "block";
-    
-}
+// Create a function that listen to user click to different elements
+tabs.forEach(tab => {
+    tab.addEventListener('click', () => {
+        const target = document.querySelector(tab.dataset.tabTarget)
+        //Remove the active element when user click to different element
+        tabContents.forEach(tabContents =>{
+            tabContents.classList.remove('active')
+        })
 
-function history()
-{
-    allhide();
-    var b = document.getElementById("history");
-    b.style.display = "block";
-}
+        //Remove the current tab when user click to other tab
+        tabs.forEach(tab =>{
+            tab.classList.remove('active')
+        })
+        
+        //Adding new active tab
+        tab.classList.add('active')
 
-function food()
-{
-    allhide();
-    var c = document.getElementById("food");
-    c.style.display = "block";
-    
-}
+        //Adding new active element based on element's ID
+        target.classList.add('active')
 
-function visitWhen()
-{
-    allhide();
-    var d = document.getElementById("when");
-    d.style.display = "block";
-
-}
-
-function scenery()
-{
-    allhide();
-    var e = document.getElementById("what");
-    e.style.display = "block";
-}
-
-function vehicles()
-{
-    allhide();
-    var f = document.getElementById("how");
-    f.style.display = "block";
-}
-
-
+    })
+})
