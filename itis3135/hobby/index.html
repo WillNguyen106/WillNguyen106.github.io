@@ -37,13 +37,26 @@
     figure img
     {
         width: 320px;
-        height: 320px;
+        height: 290px;
     }
+
+    a
+    {
+        text-decoration: none;
+        color:chocolate;
+    }
+
+    a:hover{color:darkgray}
 
     strong
     {
         text-align: justify;
         display: inline-block;
+    }
+
+    footer
+    {
+        text-align: center;
     }
 
     /* Tab decoration and display element*/
@@ -105,7 +118,7 @@
         /* The element is resized to fill the block and maintain proportions: */
         object-fit:fill;
         width: 600px;
-        height: 500px;
+        height: 400px;
     }
     /* Back and forward buttons: */
     .box .previous, .box .next
@@ -129,7 +142,7 @@
 
     .box .next
     {
-        right: 385px;
+        right: 320px;
         border-radius: 3px 0 0 3px;
     }
     /* When you hover over the buttons, add the background of the buttons: */
@@ -234,17 +247,23 @@
                         Rice is the staple of the diet, consumed in some form in almost every meal. For Vietnamese adults, all three meals of the day may consist of steamed 
                         rice with side dishes of vegetables or fish or meat. Variations on steamed rice include congee – rice gruel; rice vermicelli topped with ground pork, 
                         bean sprouts, mint or basil; and pho – rice noodle soup made with beef or chicken broth and slices of meat, garnished with bean sprouts and basil.
-                        <figure>
-                            <a href="images/Pho.jpg">
-                                <img src="images/Pho.jpg" alt="Traditional Vietnam Pho">
-                                <figcaption>Photo by <a href="#">areta ekarafi</a></figcaption>
-                            </a>
-                        </figure>
+                        
                         Pho is sometimes eaten for breakfast. Also popular are salty cakes made of rice flour with minced pork and dried shrimp. The more Americanized Vietnamese
                         may eat breakfasts of oatmeal or French bread with jam and tea. Lunch might consist of banh mi, a sandwich of carrots, cilantro, onions and daikon with pork 
                         or chicken on a French roll; or rice vermicelli; or pork and vegetables wrapped in thin rice-paper wrappers. Dinner is almost always rice, plus a few steamed 
                         or stir-fried dishes, typically including vegetables and either fish or pork.
                     </p>
+                    <figure>
+                        <a href="images/vietnam food/food1.jpg">
+                            <img src="images/vietnam food/food1.jpg" alt="Food picture">
+                        </a>
+                        <a href="images/vietnam food/food3.jpg">
+                            <img src="images/vietnam food/food3.jpg" alt="Food picture">
+                        </a>
+                        <a href="images/vietnam food/food4.jpg">
+                            <img src="images/vietnam food/food4.jpg" alt="Food picture">
+                        </a>
+                    </figure>
                 </div>
             
                 <!--Section 4 of Hobby-->
@@ -270,32 +289,32 @@
                     <p>
                         Vietnam has so many places that you can travel and enjoy your trip. You will not regret if you spend your vacation time in Vietnam. Moreover, Vietnam has so many mountain and lakes that
                         will relax your mind and you also easy to find your peaceful there. Below is the slideshow of Vietnam.
+                    </p>
                         <div class="box">
                             <!--First image-->
                             <div class="item">
-                                <img src="images/HalongBay.jpg" alt="Ha Long Bay">
+                                <img src="images/vietnam scenery/HalongBay.jpg" alt="Ha Long Bay">
                             </div>
                             <!--Second image-->
                             <div class="item">
-                                <img src="images/hanoi.jpg" alt="Ha Noi">
+                                <img src="images/vietnam scenery/hanoi.jpg" alt="Ha Noi">
                             </div>
                             <!--Third image-->
                             <div class="item">
-                                <img src="images/hoian.jpeg" alt="Hoi An">
+                                <img src="images/vietnam scenery/hoian.jpeg" alt="Hoi An">
                             </div>
                             <!--Four image-->
                             <div class="item">
-                                <img src="images/phuquoc.jpg" alt="Phu Quoc">
+                                <img src="images/vietnam scenery/phuquoc.jpg" alt="Phu Quoc">
                             </div>
                             <!--Fifth image-->
                             <div class="item">
-                                <img src="images/Sapa.jpg" alt="Sa Pa">
+                                <img src="images/vietnam scenery/Sapa.jpg" alt="Sa Pa">
                             </div>
                             <!--Previous and Next Button-->
                             <a class="previous" onclick="previousSlide()">&#10094;</a>
                             <a class="next" onclick="nextSlide()">&#10095;</a>
                         </div>
-                    </p>
                 </div>
             
                 <!--Section 6 of Hobby-->
@@ -308,19 +327,30 @@
                         You should rent from reputable companies that provide reliable vehicles (Honda, Yamaha etc), rather than Chinese knock-offs. The cheap bikes are around $200 and more. Moreover, 110cc to 125cc
                         will be completely sufficient for touring the country. Speed limits are low within Vietnam - 25mi/h (40km/h) for cities, 37mi/h (60km/h) for highways - so having a very powerful motorbike can often
                         be a detriment in congested areas.<br>
-
                     </p>
+                    <figure>
+                        <a href="images/vietnam vehicles/vehicle1.jpeg">
+                            <img src="images/vietnam vehicles/vehicle1.jpeg" alt="Vehicles picture">
+                        </a>
+                        <a href="images/vietnam vehicles/vehicle2.png">
+                            <img src="images/vietnam vehicles/vehicle2.png" alt="Vehicles picture">
+                        </a>
+                        <a href="images/vietnam vehicles/vehicle3.jpg">
+                            <img src="images/vietnam vehicles/vehicle3.jpg" alt="Vehicles picture">
+                        </a>
+                    </figure>
                 </div>
             </div>
         </main>
         <footer>
-
-
-
-
-
-
-        </footer>
+            <p> Page created by <a href="../nguyen.design/index.html">Nguyen Design LLC</a> &copy;2022 </p><br>
+           <a id="validation_link_html" href=""><img src="../images/button_validation_html5.png" alt="HTML Validation Link" style="width: 88px; height: 31px;"/></a>
+           <a id="validation_link_css" href=""><img src="../images/button_validation_css.png" alt="CSS Validation Link" style="width: 88px; height: 31px;"></a>
+           <script>
+             document.getElementById('validation_link_css').setAttribute('href', 'https://jigsaw.w3.org/css-validator/check?uri=' + location.href);
+             document.getElementById('validation_link_html').setAttribute('href', 'https://validator.w3.org/check?uri=' + location.href);
+           </script>
+         </footer>
     </body>
 
 
