@@ -13,8 +13,9 @@ function userInput()
 
 // Create a validation function to make sure the entry is a valid number
 function validateEntry()
-{
-    while(numberOfSide > 10 || numberOfSide < 0 || isNaN(numberOfSide))
+{   
+    numberOfSide = Math.round(Math.abs(numberOfSide));
+    while(numberOfSide > 10 || numberOfSide < -10 || isNaN(numberOfSide))
     {
         alert("Your number is not valid. Please enter your number again(1-10)");
         numberOfSide = parseInt(prompt("The Walnut Numbat would like your number: "))
@@ -24,10 +25,9 @@ function validateEntry()
 }
 
 // Create a function that return a polygon name
-function getShape()
-{
-    var shape;
-    shape  = array[numberOfSide - 1];
+function getShape(shape)
+{   
+   
+    shape  = array[numberOfSide-1];
     return shape;
-
 }
