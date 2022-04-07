@@ -42,6 +42,11 @@ a
     text-decoration: none;
 }
 
+a:hover
+{
+    color:brown;
+}
+
 h1,h2
 {
     text-align: center;
@@ -74,8 +79,63 @@ h1,h2
     font-size: 20px;
 }
 
+footer
+{
+    display:table;
+    padding:10px;
+}
 
- 
+form
+{
+    background-color: blanchedalmond;
+    display:table;
+    padding: 30px;
+    border: 2px solid black;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+input[type=text]
+{
+    width: 40%;
+    padding: 3px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    font:normal;
+}
+
+input[type=email]
+{
+    width: 40%;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    font:normal;
+   
+}
+
+input[type=tel]
+{
+    width: 40%;
+    padding: 2px;
+    border: 1px solid whitesmoke;
+    border-radius: 6px;
+    
+}
+
+label
+{
+    padding: 6px 6px 6px 0px;
+    display: inline-block;
+    font-size: 14px;
+}
+
+button
+{
+    padding: 5px;
+    border-radius: 10px;
+    background-color:blanchedalmond;
+}
 
 
 
