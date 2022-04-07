@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="utf-8">
+        <title>
+
+        </title>
+        <link href="styles/default.css" type="text/css" rel="stylesheet">
+        <script></script>
+    </head>
+    <body>
+        <div data-include="components/header.html"></div>
+
+        <main>
+            <div>
+                <h1>CONTACT US</h1>
+                <hr>
+                <form action="#">
+                    <!--Title-->
+                    <div>
+                        <label for="title">Title:*</label><br>
+                        <select name="title" id="title" required>
+                            <option selected="selected" value="">Please Select</option>
+                            <option value="Mr">Mr</option>
+                            <option value="Ms">Ms</option>
+                            <option value="Mrs">Mrs</option>
+                            <option value="Dr">Dr</option>
+                        </select>
+                    </div>
+                    <!--User info-->
+                    <div>
+                        <label for="fname">First Name:*</label><br>
+                        <input type="text" id="fname" name="fname" placeholder="Your first name..." required><br>
+
+                        <label for="lname">Last Name:*</label><br>
+                        <input type="text" id="lname" name="lname" placeholder="Your last name..." required><br>
+
+                        <label for="email">Email Adress:*</label><br>
+                        <input type="email" id="email" name="email" required><br>
+
+                        <label for="phone">Phone Number:</label><br>
+                        <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-789"><br>
+                    </div>
+                    <!--Country-->
+                    <div>
+                        <label for="country">Country of Residence:*</label><br>
+                        <select name="country" id="country">
+                            <option selected="selected" value="">Please Select</option>
+                            <option value="Afghanistan">Afghanistan</option>
+                            <option value="Aland Islands">Aland Islands</option>
+                            <option value="Albania">Albania</option>
+                            <option value="Australia">Australia</option>
+                            <option value="Bangladesh">Bangladesh</option>
+                            <option value="Brazil">Brazil</option>
+                            <option value="Cambodia">Cambodia</option>
+                            <option value="China">China</option>
+                            <option value="">Afghanistan</option>
+                            <option value="Vietnam">Vietnam</option>
+                            <option value="United Kingdom">United Kingdom</option>
+                            <option value="United Nations">United Nations</option>
+                            <option value="United States">United States</option>
+                            <option value="Zambia">Zambia</option>
+                            <option value="Zimbabwe">Zimbabwe</option>
+                        </select>
+                    </div>
+                    <!--Other Request-->
+                    <div>
+                        <label for="other">Other Request:</label><br>
+                        <textarea name="other" rows="10" cols="40"></textarea>
+                    </div>
+                    <!--submit button-->
+                    <div>
+                        <input type="Submit">
+                        <input type="Reset">
+                    </div>
+
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                
+                </form>
+
+
+
+
+
+
+
+
+
+
+
+                
+            </div>
+         
+        </main>
+
+        <div data-include="components/footer.html"></div>
+        <script src="scripts/htmlInclude.js"></script>
+    </body>
+</html>

@@ -4,34 +4,37 @@
         <meta charset = "utf-8">
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
         <script src="scripts/jquery-3.6.0.min.js"></script>
-        <script src="scripts/slideshow.js"></script>
+        <script src="scripts/activity10.js"></script>
 
         <title>
-            Will Nguyen | ITIS 3135 | Walnut Brown Numbat | SlideShow
+            Will Nguyen | ITIS 3135 | Walnut Brown Numbat | Image Swap
         </title>
     </head>
     
     <body>
+        
         <div data-include = "components/header.html"></div>
        <main>
             <h1>Car SlideShow</h1>
+            <div>
                 <ul id="image_list">
-                    <li><a href="images/chevycamaro.jpg" title="Chevy Camaro">
+                    <li class="slideshow"><a href="images/chevycamaro.jpg" title="Chevy Camaro">
                         <img class="thumbnails" src="images/chevycamaro.jpg" alt=""></a></li>
                     
-                    <li><a href="images/posche911.jpg" title="Posche911">
+                    <li class="slideshow"><a href="images/posche911.jpg" title="Posche911">
                         <img class="thumbnails" src="images/posche911.jpg" alt=""></a></li>
                     
-                    <li><a href="images/lamborghini.jpg" title="Lamborghini">
+                    <li class="slideshow"><a href="images/lamborghini.jpg" title="Lamborghini">
                         <img class="thumbnails" src="images/lamborghini.jpg" alt=""></a></li>
                     
-                    <li><a href="images/Mercedes-Benz.jpg" title="Mercedes-Benz">
+                    <li class="slideshow"><a href="images/Mercedes-Benz.jpg" title="Mercedes-Benz">
                         <img class="thumbnails" src="images/Mercedes-Benz.jpg" alt=""></a></li>
                 </ul>
+            </div>
             <h2 id="caption">Chevy Camaro</h2>
             <p><img id="main_image" src="images/chevycamaro.jpg" alt=""></p>
         </main>
-
+        
         <div data-include = "components/footer.html"></div>
         <script src="scripts/htmlInclude.js"></script>
 
