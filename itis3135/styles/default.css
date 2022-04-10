@@ -283,8 +283,8 @@ p
 .slideshow
 {
     display: inline;
-    width: 400px;
-    height: 400px;
+    position:relative;
+    margin:auto;
 }
 
 /*/*SlideShow for activity 9*/
@@ -327,7 +327,7 @@ p
 
 .box .next
 {
-    right: 240px;
+    right: 390px;
     border-radius: 3px 0 0 3px;
 }
 /* When you hover over the buttons, add the background of the buttons: */
@@ -356,6 +356,10 @@ p
     } 
 }
 
+.center1
+{
+    text-align: center;
+}
 
   
   
