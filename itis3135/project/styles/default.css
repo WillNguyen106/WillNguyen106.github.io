@@ -148,7 +148,7 @@ button
 .container-1
 {
     display:flex;
-    justify-content: space-between;
+    flex-wrap: wrap;
 }
 
 .container-1 div
