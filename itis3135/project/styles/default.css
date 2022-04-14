@@ -12,7 +12,7 @@ body
 {
     font-family: Arial;
     color:#6E646C;
-    background-color:white;
+    background-color:whitesmoke;
     margin-left: 20px;
     margin-right: 20px;
 }
@@ -57,20 +57,20 @@ h1,h2
 
 .text1
 {
-    text-align: center;
     font-family: Arial, Helvetica, sans-serif;
-    padding:15px;
     font-size: 22px;
 }
 
 .box
 {
   position:relative;
-  padding: 20px;
+  padding: 10px;
   box-sizing: border-box;
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
-  display:flex;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .box .content
@@ -82,7 +82,9 @@ h1,h2
 footer
 {
     display:table;
-    padding:10px;
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 form
@@ -130,6 +132,12 @@ label
     font-size: 14px;
 }
 
+.label1
+{
+    font-weight: bold;
+    font-size: 18px;
+}
+
 button
 {
     padding: 5px;
@@ -137,9 +145,26 @@ button
     background-color:blanchedalmond;
 }
 
+.container-1
+{
+    display:flex;
+    margin-left: auto;
+    margin-right: auto;
+    flex-flow:row-reverse;
+}
+
+.container-1 div
+{
+    border: 1px #6E646C solid;
+
+}
+
+.box-1 ul li, .box-2 ul li,.box-3 ul li,.box-4 ul li
+{
+    display:grid;
+}
+ 
 
 
-  
-  
   
 
