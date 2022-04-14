@@ -147,7 +147,6 @@ button
 
 .container-1
 {
-    max-width: 1300px;
     display:flex;
     justify-content: space-between;
 }
