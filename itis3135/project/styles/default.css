@@ -19,7 +19,7 @@ body
 
 header
 {
-    text-align: center;
+    text-align:justify;
 } 
 
 .logo
@@ -69,8 +69,8 @@ h1,h2
   border-radius: 4px;
   box-shadow: 0 5px 15px rgba(0,0,0,.5);
   display: flex;
-  margin-left: auto;
-  margin-right: auto;
+  margin-left: 150px;
+  margin-right: 150px;
 }
 
 .box .content
@@ -154,17 +154,12 @@ button
 .container-1 div
 {
     border: 1px bisque solid;
+    text-align: center;
 }
 
 .box-1 ul li, .box-2 ul li,.box-3 ul li,.box-4 ul li
 {
     display:grid;
-}
-
-.container-photo
-{
-    display:flex;
-    flex-flow: wrap;
 }
 
 
