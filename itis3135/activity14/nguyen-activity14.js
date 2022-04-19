@@ -2,8 +2,7 @@
 $(document).ready(function() {
     
 }); // end read
-
-
+// Create function for JSON file and get data from json_files folder
 function docData(fileName) {
     $.getJSON("./json_files/" + fileName,function(data){
         $.each(data,function(){
