@@ -4,9 +4,9 @@
 <head>
 	<meta charset="utf-8">
 	<title>Load Speaker Files</title>
-	<link rel="stylesheet" href="Activity14.css">
+	<link rel="stylesheet" href="nguyen-activity14.css">
 	<script src="https://code.jquery.com/jquery-3.1.1.min.js"></script>
-	<script src="Activity14.js"></script>
+	<script src="nguyen-activity14.js"></script>
 </head>
 
 <body>
@@ -16,11 +16,11 @@
 	<h2>Celebrating our <span class="shadow">75<sup>th</sup></span> Year</h2>
 </header>
 <main>
-	<h1>The Supreme Nine: Black Robed Secrets</h1>
-	<h2>October</h2>
-	<h3>Jeffrey Toobin</h3>
-	<img src="images/toobin_court.jpg" alt = "toobin_picture">
-	<p>Author of the critically acclaimed best seller, The Nine: Inside the
+	<h1 id="title">The Supreme Nine: Black Robed Secrets</h1>
+	<h2 id="month">October</h2>
+	<h3 id="name">Jeffrey Toobin</h3>
+	<img id="image" src="images/toobin_court.jpg" alt = "toobin_picture">
+	<p id="text">Author of the critically acclaimed best seller, The Nine: Inside the
 		Secret World of the Supreme Court, Jeffrey Toobin brings the inside
 		story of one of America's most mysterious and powerful institutions to
 		the Saroyan stage. At the podium, Toobin is an unbiased, deeply analytic
@@ -32,10 +32,10 @@
 	<h1 id="speakers">This Year&rsquo;s Speakers</h1>
 	<nav id="nav_list">
 		<ul>
-			<li><a href="#" title="toobin">October<br>Jeffrey Toobin</a></li>
-			<li><a href="#" title="sorkin">November<br>Andrew Ross Sorkin</a></li>
-			<li><a href="#" title="chua">January<br>Amy Chua</a></li>
-			<li><a href="#" title="sampson">December<br>Scott Sampson</a></li>
+			<li><a href="#" title="toobin" onclick="docData('toobin.json')">October<br>Jeffrey Toobin</a></li>
+			<li><a href="#" title="sorkin" onclick="docData('sorkin.json')">November<br>Andrew Ross Sorkin</a></li>
+			<li><a href="#" title="chua" onclick="docData('chua.json')">January<br>Amy Chua</a></li>
+			<li><a href="#" title="sampson" onclick="docData('sampson.json')">December<br>Scott Sampson</a></li>
 		</ul>
 	</nav>
 </aside>
