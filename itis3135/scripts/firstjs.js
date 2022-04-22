@@ -13,8 +13,8 @@ var totalIncome;
 // also display current date and current time
 function questions()
 {
-    setName(prompt("Please enter your name", "Will Nguyen"))
-    setFeeling(prompt("How are you feeling?","Great!"))
+    setName(prompt("Please enter your name"))
+    setFeeling(prompt("How are you feeling?"))
 
     document.getElementById('date').innerHTML = 'Today is ' + getCurrentDate() + ', and the time is: ' + getCurrentTime();
     document.getElementById('greet').innerHTML = 'Nguyen Designs welcomes you, ' + getName() + '!\n' + "We are glad you are doing " + getFeeling();

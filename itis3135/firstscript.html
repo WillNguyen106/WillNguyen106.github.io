@@ -3,12 +3,12 @@
     <head>
         <meta charset = "utf-8">
         <title>
-            Will Nguyen | ITIS 3135 | Walnut Brown Numbat | Table
+            Will Nguyen | ITIS 3135 | Walnut Brown Numbat | First Script
         </title>
         <link href = "styles/default.css" type = "text/css" rel = "stylesheet">
         <script src="scripts/firstjs.js"></script>
     </head>
-    <body onload="questions()">
+    <body>
         <div data-include = "components/header.html"></div>
         <main>
             <h2>First Scripts</h2>
@@ -16,6 +16,7 @@
             <h3 id='greet'></h3>
             <div id='first'>
                 <h3>Press the Buttons to do Things:</h3><br>
+                <button class="button" id="first" onclick="questions()">Greets</button><br>
                 <button class="button" onclick="scriptTest()">Test</button><br>
                 <button class="button" onclick="calculateTax()">Tax</button><br>
                 <h3 id='tax'></h3>

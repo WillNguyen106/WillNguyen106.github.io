@@ -7,7 +7,7 @@ $(document).ready(function() {
         },
         timeout: 10000,
         error: function(xhr, status, error) {
-            alert("Error: " + xhr.status + " - " + error);
+            alert("Error: " + xhr.status + "-" + error);
         },
         dataType: "json",
         success: function(data) {
