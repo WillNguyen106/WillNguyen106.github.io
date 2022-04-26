@@ -53,7 +53,7 @@ nav
 {
     padding: 10px;
     background-color:peru;
-    font-size: 18px;
+    font-size: 16px;
     text-align: center;
 
 }
@@ -62,12 +62,12 @@ a
 {
     color: black;
     text-decoration: none;
-    padding: 20px;
+    padding-right: 40px;
 }
 
 a:hover
 {
-    color:brown;
+    color: brown;
 }
 
 h1,h2
