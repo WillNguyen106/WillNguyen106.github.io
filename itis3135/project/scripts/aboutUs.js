@@ -9,8 +9,6 @@ $(document).ready(function(){
         randomStart: true,
         pause: 3000,
         moveSlides:1,
-    
-    
     });
 
 });
