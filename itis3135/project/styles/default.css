@@ -13,6 +13,10 @@ Source:
     background-color:burlywood;
 }
 
+q
+{
+    font-family: fantasy;
+}
 .quote
 {
     margin:auto;
@@ -78,10 +82,7 @@ h1,h2
     margin-right: auto;
 }
 
-h3
-{
-    text-align: center;
-}
+h3{text-align: center;}
 
 .text1
 {
@@ -107,19 +108,45 @@ h3
     font-size: 20px;
 }
 
+table 
+{
+    border: 1px solid black;
+    text-align: center;
+}
+
+tr
+{
+    border: 1px solid black;
+}
+
+th
+{
+    border: 1px solid black;
+
+}
+
+td
+{
+    border: 1px solid black;
+    text-align: center;
+}
+
 form
 {
     background-color: blanchedalmond;
-    display:table;
     padding: 30px;
-    border: 2px solid black;
-    margin-left: auto;
-    margin-right: auto;
+    margin-left: 400px;
+    margin-right: 400px;
+}
+
+textarea
+{
+    width: 100%;
 }
 
 input[type=text]
 {
-    width: 40%;
+    width: 100%;
     padding: 3px;
     border: 1px solid whitesmoke;
     border-radius: 6px;
@@ -128,7 +155,7 @@ input[type=text]
 
 input[type=email]
 {
-    width: 40%;
+    width: 100%;
     padding: 2px;
     border: 1px solid whitesmoke;
     border-radius: 6px;
@@ -138,7 +165,7 @@ input[type=email]
 
 input[type=tel]
 {
-    width: 40%;
+    width: 100%;
     padding: 2px;
     border: 1px solid whitesmoke;
     border-radius: 6px;
@@ -173,13 +200,12 @@ button
 
 .container-1 div
 {
-    border: 1px bisque solid;
-    text-align: center;
+    text-align:center;
 }
 
 .box-1 ul li, .box-2 ul li,.box-3 ul li,.box-4 ul li
 {
-    display:grid;
+    display: grid;
 }
 
 #banner
@@ -210,6 +236,23 @@ button
 #thumbnail:hover
 {
     opacity: 0.7;
+}
+
+.bx-wrapper
+{
+   margin:auto;
+}
+
+.box-room
+{
+    position:relative;
+    padding: 10px;
+    box-sizing: border-box;
+    border-radius: 4px;
+    box-shadow: 0 5px 15px rgba(0,0,0,.5);
+    display: flex;
+    margin-left: 80px;
+    margin-right: 150px;
 }
 
 

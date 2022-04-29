@@ -6,68 +6,74 @@
 
         </title>
         <link href="styles/default.css" type="text/css" rel="stylesheet">
-        <script></script>
+        <!--<link rel="stylesheet" href="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/themes/smoothness/jquery-ui.css">-->
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>
+        <script src="https://ajax.googleapis.com/ajax/libs/jqueryui/1.12.1/jquery-ui.min.js"></script>
+        <script src="scripts/service.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
         <main>
-            <h1>SERVICES</h1>
             <!--Facility & Service-->
-            <div>
+            <div id="accordion">
                 <h2>Hotel Amenities</h2>
-                <ul>
-                    <li>Dual split-type airconditioning</li>
-                    <li>Restaurant</li>
-                    <li>Scanner, Color printer & Photocopier</li>
-                    <li>Daily English newspaper</li>
-                    <li>Daily housekeeping</li>
-                    <li>24-hour security, reception & IT support</li>
-                    <li>Laundry & Dry cleaning</li>
-                    <li>Foreign currency exchange</li>
-                    <li>Package and custom made tours</li>
-                    <li>Car, van, bike, sport bicycle hiring</li>
-                    <li>Airport transfer (4, 7, 15, 24, 45 seats)</li>
-                    <li>Water Puppet show ticket booking</li>
-                    <li> In-room FREE Wireless internet access with a laptop</li>
-                    <li>Noise-free rooms with soundproof glass windows</li>
-                </ul>
-            </div>
-            <!--Airport Service-->
-            <div>
-                <h2>AIRPORT TRANSFER</h2>
-                <table>
-                    <tr>
-                        <th id="type">Type of vehicles</th>
-                        <th id="price">Price per trip(USD)</th>
-                    </tr>
-                    <tr>
-                        <td headers="type">4-seater car</td>
-                        <td headers="price">25.00</td>
-                    </tr>
-                    <tr>
-                        <td headers="type">7-seater car</td>
-                        <td headers="price">30.00</td>
-                    </tr>
-                    <tr>
-                        <td headers="type">16-seater van</td>
-                        <td headers="price">35.00</td>
-                    </tr>
-                </table>
-                <figure>
-                    <img src="images/lantana/service/airportService/transfer1.jpg" alt="">
-                    <img src="images/lantana/service/airportService/transfer2.jpg" alt="">
-                    <img src="images/lantana/service/airportService/transfer3.jpg" alt="">
-                </figure>
-            </div>
-            <!--Souvenir Shop-->
-            <div>
+                <div>
+                    
+                    <ul>
+                        <li>Dual split-type airconditioning</li>
+                        <li>Restaurant</li>
+                        <li>Scanner, Color printer & Photocopier</li>
+                        <li>Daily English newspaper</li>
+                        <li>Daily housekeeping</li>
+                        <li>24-hour security, reception & IT support</li>
+                        <li>Laundry & Dry cleaning</li>
+                        <li>Foreign currency exchange</li>
+                        <li>Package and custom made tours</li>
+                        <li>Car, van, bike, sport bicycle hiring</li>
+                        <li>Airport transfer (4, 7, 15, 24, 45 seats)</li>
+                        <li>Water Puppet show ticket booking</li>
+                        <li> In-room FREE Wireless internet access with a laptop</li>
+                        <li>Noise-free rooms with soundproof glass windows</li>
+                    </ul>
+                </div>
+                <!--Airport Service-->
+                <h2>Airport Transfer</h2>
+                <div>
+                    <table>
+                        <tr>
+                            <th id="type">Type of vehicles</th>
+                            <th id="price">Price per trip(USD)</th>
+                        </tr>
+                        <tr>
+                            <td headers="type">4-seater car</td>
+                            <td headers="price">25.00</td>
+                        </tr>
+                        <tr>
+                            <td headers="type">7-seater car</td>
+                            <td headers="price">30.00</td>
+                        </tr>
+                        <tr>
+                            <td headers="type">16-seater van</td>
+                            <td headers="price">35.00</td>
+                        </tr>
+                    </table>
+                    <figure>
+                        <img src="images/lantana/service/airportService/transfer1.jpg" alt="">
+                        <img src="images/lantana/service/airportService/transfer2.jpg" alt="">
+                        <img src="images/lantana/service/airportService/transfer3.jpg" alt="">
+                    </figure>
+                </div>
+                <!--Souvenir Shop-->
                 <h2>Souvenir Shop</h2>
-                <figure>
-                    <img src="images/lantana/souvenirShop/1.jpg" alt="">
-                </figure>
-                <p>Drop by our Souvenir Shop in the main lobby to find locally hand-made gifts at 
-                    reasonable prices for your family or friends. You can also find something special 
-                    for yourself to remember your visit to Hoi An Ancient Town.</p>
+                <div>
+                    
+                    <figure>
+                        <img src="images/lantana/souvenirShop/1.jpg" alt="">
+                    </figure>
+                    <p>Drop by our Souvenir Shop in the main lobby to find locally hand-made gifts at 
+                        reasonable prices for your family or friends. You can also find something special 
+                        for yourself to remember your visit to Hoi An Ancient Town.</p>
+                </div>
             </div>
         </main>
 
