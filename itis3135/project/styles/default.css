@@ -15,7 +15,8 @@ Source:
 
 q
 {
-    font-family: fantasy;
+    font-family: 'Marck Script', cursive;
+    font-size: 32px;
 }
 .quote
 {
@@ -62,14 +63,14 @@ nav
 
 }
 
-a
+nav a, .grid-footer-item a
 {
     color: black;
     text-decoration: none;
     padding-right: 40px;
 }
 
-a:hover
+nav a:hover, .grid-footer-item a:hover
 {
     color: brown;
 }
@@ -112,6 +113,22 @@ table
 {
     border: 1px solid black;
     text-align: center;
+    margin:auto;
+    width: 100%;
+    height: auto;
+    padding: 20px;
+}
+
+table tr:nth-child(even)
+{
+    background-color:wheat;
+    color:rgb(99, 50, 13)
+}
+
+table tr:nth-child(odd)
+{
+    background-color:tan;
+    color:rgb(99, 50, 13)
 }
 
 tr
@@ -220,7 +237,7 @@ button
 {
     display:grid;
     gap: 30px;
-    grid-template-columns: 300px 300px 300px 300px;
+    grid-template-columns: 23% 23% 23% 23%;
     margin-left: 50px;
 }
 
@@ -240,7 +257,7 @@ button
 
 .bx-wrapper
 {
-   margin:auto;
+    margin: auto;
 }
 
 .box-room
@@ -253,6 +270,36 @@ button
     display: flex;
     margin-left: 80px;
     margin-right: 150px;
+}
+
+.box-room, .content
+{   
+    padding: 10px;
+    font-size: 20px;
+}
+
+
+
+#accordion
+{
+    background-color:cornsilk;
+}
+
+.transfer
+{
+    display:grid;
+    grid-template-columns: 35% 35% 35%;
+}
+.transfer img
+{
+    width: 430px;
+    height: 320px;
+    padding: 20px;
+}
+
+#souvenir img
+{
+    margin-left: 25%;
 }
 
 

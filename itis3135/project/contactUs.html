@@ -1,12 +1,16 @@
 <!DOCTYPE html>
 <html lang="en-US">
     <head>
-        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <meta charset="utf-8">
         <title>
-
+            LANTANA BOUTIQUE HOI AN HOTEL | CONTACT US
         </title>
         <link href="styles/default.css" type="text/css" rel="stylesheet">
-        <script></script>
+        <link rel = "shortcut icon" type = "image/png" href="styles/favicon.png">
+        <link rel="stylesheet" href="//code.jquery.com/ui/1.13.1/themes/base/jquery-ui.css"/>
+        <script src="https://code.jquery.com/jquery-3.6.0.js"></script>
+        <script src="https://code.jquery.com/ui/1.13.1/jquery-ui.js"></script>
+        <script src="scripts/datePicker.js"></script>
     </head>
     <body>
         <div data-include="components/header.html"></div>
@@ -39,6 +43,9 @@
 
                         <label for="phone">Phone Number:</label><br>
                         <input type="tel" id="phone" pattern="[0-9]{3}-[0-9]{3}-[0-9]{4}" placeholder="123-456-789"><br>
+
+                        <label for="date">Date:</label><br>
+                        <input type="text" id="date"><br>
                     </div>
                     <!--Country-->
                     <div>
